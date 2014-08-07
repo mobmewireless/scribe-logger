@@ -10,11 +10,10 @@ Scribe is packaged as a ruby gem, to be easily used. To install, follow the step
 
 ## Usage
 
-  $ irb
-  > require 'scribe-logger'
-  > scribe = Scribe.loggers(:schema_uri => "http://s1.mobme.in/appsuite-vodafone-in/schema.yml")
-  > scribe.log_visit(:mobile => "8943011156")
-  > scribe.log_event(:event => "sub", :mobile => "8943011156")
+    require 'scribe-logger'
+    scribe = Scribe.loggers(:schema_uri => "http://s1.mobme.in/appsuite-vodafone-in/schema.yml")
+    scribe.log_visit(:mobile => "8943011156")
+    scribe.log_event(:event => "sub", :mobile => "8943011156")
 
 Scribe.loggers take in the following options as a ruby hash:
 :schema_uri [string]
